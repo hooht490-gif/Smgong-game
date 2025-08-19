@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Samgong Online</title>
+</head>
+<body>
+  <h1>🎴 Selamat datang di Samgong Online 🎴</h1>
+  <p>Menunggu pemain lain...</p>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    const socket = io();
+    socket.on('connect', () => {
+      console.log('Terhubung ke server');
+    });
+  </script>
+</body>
+</html>
